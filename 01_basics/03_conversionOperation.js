@@ -10,4 +10,11 @@ let valueInNumber = Number(score);
 let booleanIsLoggedIn = 0;
 
 let isLoggedIn = Boolean(booleanIsLoggedIn);
-console.log(isLoggedIn);
+//console.log(isLoggedIn);
+
+// Operations -----------------------------
+
+let value = 3;
+let negValue = -value;
+
+console.log(negValue);
