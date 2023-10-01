@@ -15,4 +15,17 @@ const millions = 10000000000
 
 console.log(millions.toLocaleString());
 
+// Maths =============================================
+
+console.log(Math.abs(-24));
+console.log(Math.round(2.789));
+
+console.log(Math.random());
+console.log(Math.random() * 10 + 1);
+
+const min = 10;
+const max = 20;
+
+console.log(Math.round((Math.random() * (max - min + 1)) + min));
+
 
