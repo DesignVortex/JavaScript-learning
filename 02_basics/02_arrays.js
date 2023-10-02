@@ -20,4 +20,5 @@ const nameArray = "Vishal";
 
 const newNameArray = Array.from(nameArray);
 
-console.log(newNameArray);
+// console.log(newNameArray);
+

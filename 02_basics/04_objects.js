@@ -31,11 +31,28 @@ const obj3 = {...obj1, ...obj2};
 
 // console.log(obj3);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("name"));
+// console.log(tinderUser.hasOwnProperty("name"));
+
+
+// Object destructring
+
+const course = {
+    courseName:  "JS in hindi",
+    courseFee: "999",
+    courseTeacher: "Hitesh" 
+}
+
+const {courseTeacher} = course;
+const {courseTeacher: teacher} = course;
+
+
+console.log(courseTeacher);
+console.log(teacher);
+
 
 
 
