@@ -39,7 +39,7 @@ buttons.forEach(function (button) {
 
 ## Project 2
 
-```javascipt
+```Javascipt
 
 const form = document.querySelector('form');
 // console.log(form);
@@ -53,14 +53,37 @@ form.addEventListener('submit', function (e) {
 
   if (height < 0 || height === '' || isNaN(height)) {
     results.innerHTML = 'Please give valid height!!!';
-  }else if (weight < 0 || weight === '' || isNaN(weight)) {
+  } else if (weight < 0 || weight === '' || isNaN(weight)) {
     results.innerHTML = 'Please give valid height!!!';
-  }else{
-    const bmi = (weight / ((height * height)/10000)).toFixed(2);
+  } else {
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
 
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+
+
+
+```
+
+## Project 3
+
+```Javascript
+
+const clock = document.getElementById('clock');
+
+// console.log(clock);
+
+let date = new Date();
+
+console.log(date.toLocaleTimeString());
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerText = date.toLocaleTimeString();
+}, 1000);
+
 
 
 ```
