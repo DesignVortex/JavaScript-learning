@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">STOP</button>
+</body>
+
+<script>
+    // Method 1
+    setTimeout(function(){
+        console.log("Vishal");
+    }, 2000);
+
+    // Method 2
+    const name = function(){
+        console.log("Vishal");
+    }
+    setTimeout(name, 3000);
+
+    const titleChanged = document.querySelector('h1');
+    const stopTitle = setTimeout(function(){
+        titleChanged.innerHTML = "Best JS Code Onlion";
+    },4000);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(stopTitle);
+    });
+
+</script>
+</html>
