@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google drive video</title>
+</head>
+<body>
+
+    <video controls width="640px" height="auto" autoplay>
+        <source src="" type="video/mp4" id="sourceID">
+        Your browser does not support the video tag.
+    </video>
+    <form action="" id="google_input">
+        <input type="text" id="driveLink">
+        <input type="submit" id="submitButton">
+    </form>
+    
+</body>
+
+<script>
+    const google_input = document.getElementById('google_input');
+    // console.log(google_input);
+    const submit = document.getElementById('submitButton');
+    // console.log(submit);
+
+    submit.addEventListener('click',function(e){
+
+        e.preventDefault();
+        
+        const userInput = document.getElementById('driveLink').value;
+        // console.log(userInput);
+        const videoURL = userInput.split('/');
+        // console.log(videoURL);
+        // console.log(videoURL[5]);
+
+        let srcVideoURL = `https://drive.google.com/uc?id=${videoURL[5]}`;
+        // console.log(srcVideoURL);
+
+        let source = document.getElementById('sourceID');
+        
+        console.log(source);
+        source.src = srcVideoURL
+
+        console.log(source.src);
+
+        
+
+
+    });
+
+</script>
+</html>
